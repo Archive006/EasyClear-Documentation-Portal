@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EasyClear Resources</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1E3A8A; /* Navy blue */
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    h1 {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .menu button {
+      padding: 12px 20px;
+      background-color: #2563EB;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .menu button:hover {
+      background-color: #1D4ED8;
+    }
+
+    .section {
+      display: none;
+      background: #ffffff20;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .section h2 {
+      margin-top: 0;
+    }
+
+    .doc-list {
+      margin-top: 15px;
+    }
+
+    .doc-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff10;
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .doc-item button {
+      padding: 8px 15px;
+      background-color: #10B981;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .doc-item button:hover {
+      background-color: #059669;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 10px;
+      right: 20px;
+      font-size: 12px;
+      color: grey;
+    }
+  </style>
+
+  <script>
+    function showSection(sectionId) {
+      document.querySelectorAll(".section").forEach(sec => sec.style.display = "none");
+      document.getElementById(sectionId).style.display = "block";
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- Header with logo -->
+  <header>
+    <img src="your-logo-file.png" alt="EasyClear Logo">
+  </header>
+
+  <h1>EasyClear Documentation Portal</h1>
+
+  <div class="container">
+
+    <!-- Buttons for sections -->
+    <div class="menu">
+      <button onclick="showSection('manuals')">User Manuals</button>
+      <button onclick="showSection('changes')">Change Requests</button>
+      <!-- Add more buttons later -->
+    </div>
+
+    <!-- USER MANUALS SECTION -->
+    <div id="manuals" class="section">
+      <h2>User Manuals</h2>
+      <div class="doc-list">
+
+        <!-- Example manual item -->
+        <div class="doc-item">
+          <span>Web Application User Guide</span>
+          <a href="https://easyclearsa-my.sharepoint.com/:b:/r/personal/samuel_easyclear_co_za/Documents/24538%20-%20Paperless%20Release%20Notification%20-%20ELG_merged.pdf?csf=1&web=1&e=FgumP9"_blank">
+            <button>Download</button>
+          </a>
+        </div>
+
+        <div class="doc-item">
+          <span>Export Procedures Manual</span>
+          <a href="https://easyclearsa-my.sharepoint.com/:b:/r/personal/samuel_easyclear_co_za/Documents/24538%20-%20Paperless%20Release%20Notification%20-%20ELG_merged.pdf?csf=1&web=1&e=FgumP9"_blank">
+            <button>Download</button>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CHANGE REQUESTS SECTION -->
+    <div id="changes" class="section">
+      <h2>Approved Change Requests</h2>
+      <div class="doc-list">
+
+        <div class="doc-item">
+          <span>CR-001 | New Report Layout</span>
+          <a href="https://easyclearsa-my.sharepoint.com/:b:/r/personal/samuel_easyclear_co_za/Documents/24538%20-%20Paperless%20Release%20Notification%20-%20ELG_merged.pdf?csf=1&web=1&e=FgumP9">
+            <button>Download</button>
+          </a>
+        </div>
+
+        <div class="doc-item">
+          <span>CR-002 | MRN Field Enhancement</span>
+          <a href="https://easyclearsa-my.sharepoint.com/:b:/r/personal/samuel_easyclear_co_za/Documents/24538%20-%20Paperless%20Release%20Notification%20-%20ELG_merged.pdf?csf=1&web=1&e=FgumP9">
+            <button>Download</button>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <footer>DBN Office</footer>
+
+</body>
+</html>
